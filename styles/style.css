@@ -1,0 +1,515 @@
+/* IMPORTS AND VARIABLES */
+/* -------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Roboto:wght@500&display=swap');
+
+
+
+/* Temp for other pages */
+img {
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+/* HEADER */
+/* -------------------------------------------------------------------*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #d1d1d1;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: #001a37;
+    margin: 0%;
+    text-align: center;
+    color: #f4e158;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f4e158;
+    display: inline-flex;
+}
+
+li {
+    width: 25%;
+}
+
+li a {
+    display: block;
+    color: #001a37;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+li a:hover {
+    background-color: #001a37;
+    color: #f4e158;
+}
+
+/* footer */
+/* -------------------------------------------------------------------*/
+
+
+footer {
+    background-color: #001a37;
+    padding: 25px 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h3 {
+    color: #f4e158;
+}
+
+footer a {
+    color: #f4e158;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #d1d1d1;
+}
+
+footer h3 a:hover {
+    text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
+    height: 64px;
+    width: 64px;
+}
+
+
+
+/* Home page */
+/* -------------------------------------------------------------------*/
+
+
+
+.img img {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.containter {
+    width: 60%;
+    background-color: #f4e158;
+    margin: 100px;
+    border: 15px #001a37 solid;
+    font-size: large;
+}
+
+.containter img {
+    float: left;
+    padding-right: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+
+/* Basics page */
+/* -------------------------------------------------------------------*/
+
+
+/* intro */
+
+.intro {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 500px;
+}
+
+#berries {
+    width: 300px;
+    height: 300px;
+    justify-self: center;
+    border-radius: 50%;
+    border: 25px #001a37 solid;
+    margin: 100px;
+}
+
+.intro-content {
+    width: 100%;
+    height: 350px;
+    justify-self: center;
+    padding: 100px;
+
+}
+
+.intro-conent-p {
+    height: auto;
+    width: auto;
+    padding: 30px;
+    background-color: #f4e158;
+    border: 25px #001a37 solid;
+    border-radius: 15%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.intro-content p {
+    height: auto;
+    width: 100%;
+    color: #001a37;
+    font-size: larger;
+    margin: 0;
+    text-align: center;
+}
+
+#cake {
+    width: 300px;
+    height: 300px;
+    justify-self: center;
+    border-radius: 50%;
+    border: 25px #001a37 solid;
+    margin: auto;
+}
+
+
+
+
+
+
+/* basics */
+#basics_content {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    border-top: #001a37 100px solid;
+}
+
+.tab {
+    background-color: #A8A6A6;
+    width: 30%;
+    height: 600px;
+}
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: #001a37;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 25px;
+    font-weight: 700;
+    border-bottom: 1px#979797 solid;
+}
+
+.tab button:hover {
+    background-color: #A8A6A6;
+}
+
+.tab button.active {
+    background-color: #001a37;
+    color: #d1d1d1;
+}
+
+.tabcontent {
+    float: left;
+    width: 100%;
+    border-left: none;
+    height: 600px;
+}
+
+.tabconent_container {
+    width: 100%;
+    background-color: #001a37;
+    color: #d1d1d1;
+}
+
+#basics_content h2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    float: center;
+    font-size: 40px;
+}
+
+#basics_content p {
+    width: 70%;
+    text-align: center;
+    padding: 30px;
+    border-top: 1px #d1d1d1 solid;
+    align-self: center;
+    font-size: 18px;
+}
+
+
+
+#gl_container {
+    background-color: #001a37;
+    color: #f4e158;
+    border: 0;
+}
+
+#gm_container {
+    background-color: #001a37;
+    color: #f4e158;
+    border: 0;
+}
+
+#bd_container {
+    background-color: #001a37;
+    color: #f4e158;
+    border: 0;
+}
+
+
+
+/* Tools page */
+/* -------------------------------------------------------------------*/
+.tools {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Calorie calculator */
+
+.cal-calculator {
+    height: 400px;
+    width: 70%;
+    background-color: #001a37;
+    margin: 50px;
+    padding: 25px;
+}
+
+.cal-calculator form {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    height: 40px;
+    font-size: 20px;
+    background-color: #d1d1d1;
+    color: #001a37;
+    font-weight: 600;
+}
+
+.cal-calculator h1 {
+    grid-area: 1 / 3 / 2 / 6;
+    color: #f4e158;
+}
+
+
+#age-label {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 25px;
+    color: #f4e158;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#age {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+
+#height-label {
+    grid-area: 3 / 1 / 4 / 2;
+    font-size: 25px;
+    color: #f4e158;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#height {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+#height-in {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+
+#weight-label {
+    grid-area: 4 / 1 / 5 / 2;
+    font-size: 25px;
+    color: #f4e158;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#weight {
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+#male-label {
+    grid-area: 2 / 5 / 3 / 6;
+    font-size: 25px;
+    color: #f4e158;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#male {
+    grid-area: 2 / 6 / 3 / 7;
+}
+
+#female-label {
+    grid-area: 3 / 5 / 4 / 6;
+    font-size: 25px;
+    color: #f4e158;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#female {
+    grid-area: 3 / 6 / 4 / 7;
+}
+
+.dropdown {
+    grid-area: 4 / 5 / 5 / 6;
+}
+
+#activity {
+    height: 40px;
+    background-color: #f4e158;
+    color: #001a37;
+    font-size: 20px;
+    font-weight: 600;
+}
+option {
+    font-weight: 600;
+}
+
+#submit {
+    grid-area: 7 / 4 / 8 / 5;
+}
+#reset {
+    grid-area: 7 / 5 / 8 / 6;
+}
+#cal-results {
+  grid-area: 7 / 6 / 8 / 7;
+  color: #f4e158;
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+/* BMI calculator */
+.bmi-calculator {
+    width: 70%;
+    height: 300px;
+    background-color: #001a37;
+    margin-bottom: 50px;
+    padding: 25px;
+}
+
+
+.bmi-calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+.bmi-calculator h1 {
+    grid-area: 1 / 3 / 2 / 6;
+    color: #f4e158;
+    padding: none;
+}
+#bmi-height-label {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 25px;
+    color: #f4e158;
+    text-align: right;
+    padding-right: 20px;
+}
+#bmi-height {
+    grid-area: 2 / 3 / 3 / 4;
+}
+#bmi-weight-label {
+    grid-area: 3 / 2 / 4 / 3;
+    font-size: 25px;
+    color: #f4e158;
+    text-align: right;
+    padding-right: 20px;
+}
+#bmi-weight {
+    grid-area: 3 / 3 / 4 / 4;
+}
+#bmi-submit {
+    grid-area: 2 / 5 / 3 / 6;
+}
+#bmi-reset {
+    grid-area: 3 / 5 / 4 / 6;
+}
+#bmi-results {
+    grid-area: 5 / 3 / 6 / 6;
+}
+
+
+.info {
+    width: 50%;
+    background-color: aqua;
+}
+
+
+
+
+
+
+/* screan */
+
+@media screen and (max-width: 900px) {
+
+    nav,
+    footer {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+
+
+
+}

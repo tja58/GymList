@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymList | Home</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="images/Untitled.png">
+    <script src="https://kit.fontawesome.com/8ec652c8fb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+
+        <h1>GymList</h1>
+        <h3>For a healthier tomorrow</h3>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="basic.html"><i class="fa-solid fa-apple-whole"></i> Basics</a></li>
+            <li><a href="tools.html"><i class="fa-solid fa-screwdriver-wrench"></i> Tools</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="intro">
+
+            <img src="images/Berries.jpg" id="berries" alt="berries">
+
+            <div class="intro-content">
+                <div class="intro-conent-p">
+                    <p>So how do we keep a healthy life style when the best tasting food may not always be the
+                        healthiest? Its important for us to understand how to keep healthy while still being able to
+                        enjoy some of the food we love. </p>
+                </div>
+            </div>
+
+            <img src="images/cake.jpg" id="cake" alt="cake">
+
+        </div>
+
+        <div id="basics_content">
+
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'gl_container')" id="defaultOpen">Weight</button>
+                <button class="tablinks" onclick="openCity(event, 'gm_container')">Muscle</button>
+                <button class="tablinks" onclick="openCity(event, 'bd_container')">Dieting</button>
+            </div>
+
+            <div id="gl_container" class="tabcontent">
+                <div class="tabconent_container">
+                    <h2>Gaining / losing weight</h2>
+                    <center>
+                        <p>So how does weight loss and weight gaining work. How can we control what we look like? What
+                            weight gaining and weight loss is all decided on by how much calories we eat in a day. If we
+                            eat more calories than we need to maintain we store those calories as fat. If we eat less
+                            calories than the amount we need to maintain we will lose weight, we will end up burning
+                            either fat or muscle to help maintain.
+                            <br>
+                            <br>
+                            So how can we use this to our advantage? We can control how much calories we eat in a day to
+                            decide on what to look like. If we wanted to lose a couple pounds in a month we could simply
+                            limit our daily consumtion by anywhere 300-500 calories below our maintainance calorie
+                            intake. This would lead us to start burning off weight and allowing us to start losing
+                            weight. The same is true if we want to gain weight
+                            we would simply need to increase our calories by 300-500 above our daily maintainance
+                            calorie intake.
+                        </p>
+                    </center>
+                </div>
+            </div>
+            <div id="gm_container" class="tabcontent">
+                <div class="tabconent_container">
+                    <h2>Gaining muscle</h2>
+                    <center>
+                        <p>Muscles allow us to do everything in life it helps us to move it helps us to react. We use
+                            muscles every day of our lives, from texting to eating. We use our muscles and our muscle
+                            memory to help us do everything.
+                            <br><br>
+                            So how can we build or gain more muscle? We build muscle by using our muscles and breaking
+                            them down. When we use muscle we are actually breaking down that muscle and ripping fibers,
+                            this may seem bad but its not. By ripping the muscle fibers we actually encourage the muscle
+                            to grow and become stronger. By consuming protein in our foods we are providing the muscle
+                            with fuel to grow more. The more we break the muscle down the more it will grow. Eating a
+                            good amount of protein in our diets and exercising our body allows us to grow our muscles
+                            more.
+                        </p>
+                    </center>
+                </div>
+            </div>
+            <div id="bd_container" class="tabcontent">
+                <div class="tabconent_container">
+                    <h2>Basics of dieting</h2>
+                    <center>
+                        <p>Many common beliefs is that once we start dieting we can never have the food we love anymore.
+                            However that is not always the case. Sure to get to peak fitness, and to look like the best
+                            body builders you would need to train a lot and eat the healthiest you can. However if
+                            you're simply wanting to lose weight or gain weight its not all that hard. You won't have to
+                            cut too much out of your diet to achieve that.
+                            <br><br>
+                            To lose or gain weight all you need to do is track how much calories your body need to
+                            maintain your current body weight, and either add or subtract 300-500 calories per day. Once
+                            you do so you should aim to eat close to that calorie intake. You can change how much you
+                            eat per day depending on your goals.
+
+                        </p>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+
+
+
+    <footer>
+        <h3>GymList &copy; 2022 - Taylor Atkin</h3>
+        <h3><a href="site-plan-rafting.html">Site Plan</a></h3>
+
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
