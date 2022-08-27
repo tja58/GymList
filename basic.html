@@ -7,25 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymList | Home</title>
 
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" type="image/x-icon" href="images/Untitled.png">
     <script src="https://kit.fontawesome.com/8ec652c8fb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header>
+    <header class="header" id="main_header">
+        <div class="HB">
+            <p>GymList</p>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="basic.html"><i class="fa-solid fa-apple-whole"></i></a></li>
+                <li><a href="tools.html"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-gear"></i></a></li>
+            </ul>
+        </div>
+        <div>
 
-        <h1>GymList</h1>
-        <h3>For a healthier tomorrow</h3>
-
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li><a href="basic.html"><i class="fa-solid fa-apple-whole"></i> Basics</a></li>
-            <li><a href="tools.html"><i class="fa-solid fa-screwdriver-wrench"></i> Tools</a></li>
-        </ul>
-    </nav>
 
     <main>
 
@@ -142,22 +149,35 @@
 
 
     <footer>
-        <h3>GymList &copy; 2022 - Taylor Atkin</h3>
-        <h3><a href="site-plan-rafting.html">Site Plan</a></h3>
+        <h3>&copy; GymList 2022</h3>
 
         <div class="social">
             <a href="https://facebook.com" target="_blank">
-                <img src="images/facebook.png" alt="fb icon">
+                <i class="icon-facebook"></i>
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="images/twitter.png" alt="twitter icon">
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
+                <i class="icon-twitter-sign"></i>
             </a>
 
         </div>
     </footer>
+
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var header = document.getElementById("main_header");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
 
 </body>
 
