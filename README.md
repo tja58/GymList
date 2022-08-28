@@ -1,6 +1,6 @@
-GymList - Webpage 
+# GymList - Webpage 
 
-## To drive users to IOS Application
+### To drive users to IOS Application
 
 ### Four main webpages 
 - main page - to introduce webpage and IOS application
