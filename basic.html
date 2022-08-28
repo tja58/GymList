@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/8ec652c8fb.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="body">
     <header class="header" id="main_header">
         <div class="HB">
             <p>GymList</p>
@@ -26,7 +26,7 @@
                 <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
                 <li><a href="basic.html"><i class="fa-solid fa-apple-whole"></i></a></li>
                 <li><a href="tools.html"><i class="fa-solid fa-screwdriver-wrench"></i></a></li>
-                <li><a href=""><i class="fa-solid fa-gear"></i></a></li>
+                <li><a href=""><i class="icon-user"></i></a></li>
             </ul>
         </div>
         <div>
@@ -34,116 +34,156 @@
         </div>
     </header>
 
-    <main>
-
-        <div class="intro">
-
-            <img src="images/Berries.jpg" id="berries" alt="berries">
-
-            <div class="intro-content">
-                <div class="intro-conent-p">
-                    <p>So how do we keep a healthy life style when the best tasting food may not always be the
-                        healthiest? Its important for us to understand how to keep healthy while still being able to
-                        enjoy some of the food we love. </p>
+    <div class="content-width">
+        <div class="slideshow">
+            <!-- Slideshow Items -->
+            <div class="slideshow-items">
+                <div class="item">
+                    <div class="item-image-container">
+                        <img class="item-image" src="images/tempIMG1.jpg" />
+                    </div>
+                    <!-- Staggered Description Elements -->
+                    <div class="item-description">
+                        <span class="vertical-part">
+                            <b>varius.</b>
+                        </span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image-container">
+                        <img class="item-image" src="images/tempIMG2.jpg" />
+                    </div>
+                    <!-- Staggered Description Elements -->
+                    <div class="item-description">
+                        <span class="vertical-part">
+                            <b>varius.</b>
+                        </span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-image-container">
+                        <img class="item-image" src="images/tempIMG3.jpg" />
+                    </div>
+                    <!-- Staggered Description Elements -->
+                    <div class="item-description">
+                        <span class="vertical-part">
+                            <b>Airbnb</b>
+                        </span>
+                    </div>
                 </div>
             </div>
 
-            <img src="images/cake.jpg" id="cake" alt="cake">
+        </div>
+        <div class="controls">
+            <ul>
+                <li class="control" data-index="0"></li>
+                <li class="control" data-index="1"></li>
+                <li class="control" data-index="2"></li>
+            </ul>
+        </div>
+
+        <div class="app-container">
+            <div class="qr">
+                <img src="/images/qrcode.jpg" alt="code">
+            </div>
+            <div class="qr-content">
+                <p>test</p>
+            </div>
 
         </div>
 
-        <div id="basics_content">
-
-            <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'gl_container')" id="defaultOpen">Weight</button>
-                <button class="tablinks" onclick="openCity(event, 'gm_container')">Muscle</button>
-                <button class="tablinks" onclick="openCity(event, 'bd_container')">Dieting</button>
-            </div>
-
-            <div id="gl_container" class="tabcontent">
-                <div class="tabconent_container">
-                    <h2>Gaining / losing weight</h2>
-                    <center>
-                        <p>So how does weight loss and weight gaining work. How can we control what we look like? What
-                            weight gaining and weight loss is all decided on by how much calories we eat in a day. If we
-                            eat more calories than we need to maintain we store those calories as fat. If we eat less
-                            calories than the amount we need to maintain we will lose weight, we will end up burning
-                            either fat or muscle to help maintain.
-                            <br>
-                            <br>
-                            So how can we use this to our advantage? We can control how much calories we eat in a day to
-                            decide on what to look like. If we wanted to lose a couple pounds in a month we could simply
-                            limit our daily consumtion by anywhere 300-500 calories below our maintainance calorie
-                            intake. This would lead us to start burning off weight and allowing us to start losing
-                            weight. The same is true if we want to gain weight
-                            we would simply need to increase our calories by 300-500 above our daily maintainance
-                            calorie intake.
-                        </p>
-                    </center>
-                </div>
-            </div>
-            <div id="gm_container" class="tabcontent">
-                <div class="tabconent_container">
-                    <h2>Gaining muscle</h2>
-                    <center>
-                        <p>Muscles allow us to do everything in life it helps us to move it helps us to react. We use
-                            muscles every day of our lives, from texting to eating. We use our muscles and our muscle
-                            memory to help us do everything.
-                            <br><br>
-                            So how can we build or gain more muscle? We build muscle by using our muscles and breaking
-                            them down. When we use muscle we are actually breaking down that muscle and ripping fibers,
-                            this may seem bad but its not. By ripping the muscle fibers we actually encourage the muscle
-                            to grow and become stronger. By consuming protein in our foods we are providing the muscle
-                            with fuel to grow more. The more we break the muscle down the more it will grow. Eating a
-                            good amount of protein in our diets and exercising our body allows us to grow our muscles
-                            more.
-                        </p>
-                    </center>
-                </div>
-            </div>
-            <div id="bd_container" class="tabcontent">
-                <div class="tabconent_container">
-                    <h2>Basics of dieting</h2>
-                    <center>
-                        <p>Many common beliefs is that once we start dieting we can never have the food we love anymore.
-                            However that is not always the case. Sure to get to peak fitness, and to look like the best
-                            body builders you would need to train a lot and eat the healthiest you can. However if
-                            you're simply wanting to lose weight or gain weight its not all that hard. You won't have to
-                            cut too much out of your diet to achieve that.
-                            <br><br>
-                            To lose or gain weight all you need to do is track how much calories your body need to
-                            maintain your current body weight, and either add or subtract 300-500 calories per day. Once
-                            you do so you should aim to eat close to that calorie intake. You can change how much you
-                            eat per day depending on your goals.
-
-                        </p>
-                    </center>
-                </div>
-            </div>
-        </div>
-
-    </main>
+    </div>
 
 
 
     <script>
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
+        // Master DOManipulator v2 ------------------------------------------------------------
+        const items = document.querySelectorAll('.item'),
+            controls = document.querySelectorAll('.control'),
+            headerItems = document.querySelectorAll('.item-header'),
+            descriptionItems = document.querySelectorAll('.item-description'),
+            activeDelay = .76,
+            interval = 5000;
+
+        let current = 0;
+
+        const slider = {
+            init: () => {
+                controls.forEach(control => control.addEventListener('click', (e) => {
+                    slider.clickedControl(e)
+                }));
+                controls[current].classList.add('active');
+                items[current].classList.add('active');
+            },
+            nextSlide: () => { // Increment current slide and add active class
+                slider.reset();
+                if (current === items.length - 1) current = -1; // Check if current slide is last in array
+                current++;
+                controls[current].classList.add('active');
+                items[current].classList.add('active');
+                slider.transitionDelay(headerItems);
+                slider.transitionDelay(descriptionItems);
+            },
+            clickedControl: (e) => { // Add active class to clicked control and corresponding slide
+                slider.reset();
+                clearInterval(intervalF);
+
+                const control = e.target,
+                    dataIndex = Number(control.dataset.index);
+
+                control.classList.add('active');
+                items.forEach((item, index) => {
+                    if (index === dataIndex) { // Add active class to corresponding slide
+                        item.classList.add('active');
+                    }
+                })
+                current = dataIndex; // Update current slide
+                slider.transitionDelay(headerItems);
+                slider.transitionDelay(descriptionItems);
+                intervalF = setInterval(slider.nextSlide, interval); // Fire that bad boi back up
+            },
+            reset: () => { // Remove active classes
+                items.forEach(item => item.classList.remove('active'));
+                controls.forEach(control => control.classList.remove('active'));
+            },
+            transitionDelay: (
+                items
+                ) => { // Set incrementing css transition-delay for .item-header & .item-description, .vertical-part, b elements
+                let seconds;
+
+                items.forEach(item => {
+                    const children = item.childNodes; // .vertical-part(s)
+                    let count = 1,
+                        delay;
+
+                    item.classList.value === 'item-header' ? seconds = .015 : seconds = .007;
+
+                    children.forEach(child => { // iterate through .vertical-part(s) and style b element
+                        if (child.classList) {
+                            item.parentNode.classList.contains('active') ? delay = count *
+                                seconds + activeDelay : delay = count * seconds;
+                            child.firstElementChild.style.transitionDelay =
+                                `${delay}s`; // b element
+                            count++;
+                        }
+                    })
+                })
+            },
         }
 
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
+        let intervalF = setInterval(slider.nextSlide, interval);
+        slider.init();
     </script>
+
+
+
+
+
+
+
+
+
+
 
 
 
