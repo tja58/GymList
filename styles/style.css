@@ -223,7 +223,7 @@ main {
     font-family: 'Fira Mono', monospace;
     -webkit-font-smoothing: antialiased;
     font-size: 1rem;
-    color: #bdbdd5;
+    color: var(--black);
     background-color: var(--white);
     padding-top: 50px;
     border: 1px var(--light_grey) solid;
@@ -232,18 +232,19 @@ main {
 .slideshow-items {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 500px;
 }
 
 .item {
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 600px;
 }
 
 .item-image-container {
+    height: 500px;
     position: relative;
-    width: 42%;
+    width: 35%;
 }
 
 .item-image-container::before {
@@ -253,7 +254,7 @@ main {
     left: 100px;
     width: 100%;
     height: 100%;
-    background: var(--dark_grey);
+    background: var(--grey);
     opacity: 0;
     z-index: 0;
 }
@@ -261,13 +262,14 @@ main {
 .item-image {
     position: relative;
     width: 100%;
-    height: 30em;
+    height: 500px;
     opacity: 0;
     display: block;
     /* transition: property name | duration | timing-function | delay  */
     transition: opacity .3s ease-out .45s;
     z-index: 0;
     margin-left: 100px;
+    border: 1px var(--light_grey) solid;
 }
 
 .item.active .item-image {
@@ -275,7 +277,7 @@ main {
 }
 
 .item.active .item-image-container::before {
-    opacity: .8;
+    opacity: 0;
 }
 
 .item-description {
@@ -339,7 +341,7 @@ main {
     position: relative;
     text-align: right;
     z-index: 0;
-    border: 1px var(--light_grey) solid;
+    border-bottom: 1px var(--light_grey) solid;
     margin-bottom: 100px;
 }
 
