@@ -108,7 +108,8 @@ li a:hover {
 .sticky+main {
     padding-top: 102px;
 }
-.sticky + .content-width {
+
+.sticky+.content-width {
     margin-top: 102px;
 }
 
@@ -208,7 +209,7 @@ main {
 
 .content-width {
     width: 100%;
-    height: 100em;
+    height: auto;
     margin: 0 auto;
     padding-top: 100px;
 }
@@ -289,7 +290,7 @@ main {
     line-height: 1.8;
 }
 
-/* Staggered Vertical Items ------------------------------------------------------*/
+/* Staggered Vertical Items */
 .item-header {
     height: 10vw;
     position: absolute;
@@ -307,8 +308,6 @@ main {
     font-size: 7vw;
     color: var(--black);
 }
-
-
 
 .vertical-part {
     overflow: hidden;
@@ -336,7 +335,7 @@ main {
     transform: translateY(0);
 }
 
-/* Controls ----------------------------------------------------------------------*/
+/* Controls */
 .controls {
     position: relative;
     text-align: right;
@@ -363,6 +362,60 @@ main {
     background: var(--dark_grey);
 }
 
+/* basic content */
+
+.bsc-content {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+    border-top: 1px var(--light_grey) solid;
+    border-bottom: 1px var(--light_grey) solid;
+    margin-bottom: 100px;
+    
+}
+
+.title-container {
+    height: auto;
+    width: 100%;
+    background-color: var(--white);
+    border-bottom: 1px var(--light_grey) solid;
+}
+
+.title-container p {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    line-height: 125px;
+    font-family: 'Fira Mono', monospace;
+    -webkit-font-smoothing: antialiased;
+    font-size: 4em;
+    color: var(--black);
+}
+
+.content-container {
+    height: 80%;
+    width: 100%;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.content-p {
+    height: 100%;
+    width: 60%;
+    padding: 5% 5% 5% 5%;
+    background-color: var(--grey);
+    border-left: 1px var(--light_grey) solid;
+    border-right: 1px var(--light_grey) solid;
+    border-bottom: 1px var(--light_grey) solid;
+    font-size: 20px;
+}
+
+.content-p p {
+    margin-bottom: 50px;
+}
+
 /* application code download */
 .app-container {
     width: 100%;
@@ -372,6 +425,7 @@ main {
     border-bottom: 1px var(--light_grey) solid;
     padding: 100px;
     display: inline-flex;
+    margin-bottom: 200px;
 }
 
 .app-container .qr {
