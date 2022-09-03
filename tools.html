@@ -35,8 +35,8 @@
     </header>
 
     <main class="tools">
-        <center>
-            <div class="cal-calculator">
+        
+          <div class="cal-calculator">
                 <form id="calorie" onsubmit="return CalcCalorie();">
                     <h1>Calorie calculator</h1>
 
@@ -73,25 +73,29 @@
                 </form>
             </div>
 
-            <div class="bmi-calculator">
-                <form onsubmit="return bmiCalc();" class="bmi-calculator-grid">
 
-                    <h1>BMI Calculator</h1>
+                <div class="bmi-calculator">
+                    <form onsubmit="return bmiCalc();" class="bmi-calculator-grid">
+    
+                        <h1>BMI Calculator</h1>
+    
+                        <label for="height" id="bmi-height-label">Height</label>
+                        <input type="text" name="height" id="bmi-height">
+    
+                        <label for="weight" id="bmi-weight-label">Weight</label>
+                        <input type="text" name="weight" id="bmi-weight">
+    
+                        <input type="submit" value="Submit" id="bmi-submit">
+                        <input type="reset" id="bmi-reset">
+    
+                        <h1 id="bmi-results"></h1>
+                    </form>
+                </div>
+            
 
-                    <label for="height" id="bmi-height-label">Height</label>
-                    <input type="text" name="height" id="bmi-height">
+            
 
-                    <label for="weight" id="bmi-weight-label">Weight</label>
-                    <input type="text" name="weight" id="bmi-weight">
-
-                    <input type="submit" value="Submit" id="bmi-submit">
-                    <input type="reset" id="bmi-reset">
-
-                    <h1 id="bmi-results"></h1>
-                </form>
-            </div>
-
-        </center>
+        
     </main>
 
     <script>
