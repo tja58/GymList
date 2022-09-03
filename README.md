@@ -10,5 +10,5 @@
 - Tools page - introduce tools they can use to improve or accelerate their progress
     - https://tja58.github.io/GymList/tools.html
 - Settings page - Settings/Profile and saved workouts
-    - temp
+    - https://tja58.github.io/GymList/settings.html
 
